@@ -1,9 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>David Tsao's Remote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+    <script>
+        function bindButtons() {
+            $(document).on("click", "#play", function (e) {
+                $.post("/play", function(data) {
+                    // Do nothing with the data
+                });
+            });
+
+            $(document).on("click", "#pause", function (e) {
+                $.post("/pause", function(data) {
+                    // Do nothing with the data
+                });
+            });
+
+            $(document).on("click", "#next_track", function (e) {
+                $.post("/next_track", function(data) {
+                    // Do nothing with the data
+                });
+            });
+
+            $(document).on("click", "#prev_track", function (e) {
+                $.post("/prev_track", function(data) {
+                    // Do nothing with the data
+                });
+            });
+
+
+        }
+
+        $(document).ready(bindButtons());
+    </script>
 </head>
 <body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>iTunes Remote</h1>
+    </div><!-- /header -->
+
+    <div data-role="content" id="content">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="next_track">Next</button>
+        <button id="prev_track">Previous</button>
+    </div><!-- /content -->
+
+</div><!-- /page -->
 
 </body>
 </html>
