@@ -21,4 +21,4 @@ Installation
 Running
 -----
 `python server.py`  
-Point your tablet's browser to http://<server's-ip-address>:5000
+Point your tablet's browser to http://[server's-ip-address]:5000
