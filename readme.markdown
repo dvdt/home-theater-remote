@@ -1,21 +1,24 @@
 iTunes Remote
 ------
-This is like the Remote app in the App Store, except it is a webapp.
+This is like the Remote app in the App Store, except it is a
+webapp. It allows you to control iTunes on your macbook/iMac from
+another computer's browser. I use it to control my laptop's audio
+output from my phone or tablet.
 
-Listening to music helps me drift off to sleep at night. Resting my head against a pillow with earphones in is uncomfortable, so I prefer to listein to music playing through my speakers. Unfortunately, turning those speakers off right before I fall asleep requires me to get out of bed and walk across the room, and the resulting physical exertion invovled shakes me out of my half sleep like state.
-
-Since I usually have either or both my iPhone or iPad in bed with me, my solution was to build a webapp that allows me to control iTunes from a simple webapp. Of course I could have just used the Apple's official Remote app, but that would have been less fun.
-
-I'm also thinking of hooking up a Raspberry Pi up to my speakers in the future. I envision an iTunes-like webapp as the interface for controlling the Raspberry Pi's audio output. This project will eventually evolve into that iTunes-like webapp.
+Why not just use the Remote app? In the future, I'd like hook up my
+home theater to, say, a Raspberry Pi. An iTunes-like web
+interface that is accessbile from all my devices (smartphone, tablet,
+laptop) for playing music and videos would be amazing. This project will
+eventually morph into that system.
 
 Installation
 ------
-`git clone blahblahbalh`  
-`cd blah blah blah`  
+`git clone git@github.com:dvdt/home-theater-remote.git`  
+`cd home-theater-remote`  
 `virtualenv --distribute venv` (optional)  
 `pip install -r requirements.txt`  
 
 Running
 -----
 `python server.py`  
-Point your browser to http://[server's ip address']:5000
+Point your tablet's browser to http://<server's-ip-address>:5000
